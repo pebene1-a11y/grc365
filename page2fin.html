@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Fixed-Width Page</title>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    } @font-face {
+        font-family: Georgia;
+        src: url(Georgia.ttf);
+    } body {
+        background: whitesmoke;
+    } #page {
+        width: 1024px;
+        height: 1325px;
+        background: white;
+        border: 1px solid darkgray;
+        box-shadow: 2px 3px 6px darkgray;
+        margin: 24px auto;
+    } #banner {
+        width: 1024px;
+    } h1 {
+        font: 48pt/1.4em 'Dancing Script';
+        text-align: center;
+        margin: 54px 0 0 0;
+        color: brown;
+        text-shadow: 2px 3px 6px darkgray;
+    } p {
+        font: 14pt/1.4em Georgia;
+        width: 768px;
+        margin: 24px auto;
+    } .float-left {
+        width: 300px;
+        float: left;
+        margin: 0 24px 0 0;
+        border: 1px solid darkgray;
+        box-shadow: 2px 3px 6px darkgray;
+    } ul {
+        width: 100%;
+        margin-top: -4px;
+    } li {
+        font: 14pt/2.0em Georgia;
+        list-style: none;
+        float: left;
+        width: 50%;
+        height: 40px;
+        text-align: center;
+        background: rgba(169,225,245,0.80);
+    } a li {
+        color: black;
+    } a {
+        text-decoration: none;
+    } li:hover, a li:hover {
+        background: rgba(169,225,245,0.50);
+    } #arrow {
+        width: 75px;
+        height: 75px;
+        margin: 76px 0 0 24px;
+        display: block;
+		position: relative;
+		bottom: 0px;
+	} video {
+			width: 640px;
+			display: block;
+			margin: 144px auto 0 auto;
+	}
+</style>
+</head>
+
+<body>
+    <div id="page">
+        <img id="banner" src="daniela.jpg" />
+        <ul>
+			<a href="""page1fin.html">
+				<li>Home</li></a>
+            <li>Balloon Federation of America</li>
+        </ul>
+
+        <h1>Balloon Federation of America</h1>
+        <p><img class="float-left" src="bausenhart.jpeg" />
+	<!-- absolute or global link -->
+            The <a href="https://bfa.net">BFA</a>	 is a 501(c)3 non-profit association dedicated to the advancement of the sport and science of lighter-than-air aviation, both hot air and gas balloons. Founded in 1961, membership in the BFA is open to anyone who shares a fascination with Lighter Than Air flight.</p>
+		<a href="mailto:info@bfa.net?
+				 subject=Web Site Inquiry">
+		<p>Email the BFA</p></a>
+		<video poster="welcomethumbnail_1.1.1.jpg" controls>
+		<source src="welcomevid4grc365.mov"
+		</video>
+	<!-- anchor link -->
+	<a href="#banner">
+    <img id="arrow" src="arrow.png" />
+		</a>
+    </div>
+</body>
+</html>
